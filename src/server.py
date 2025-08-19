@@ -41,3 +41,19 @@ def multiply(a: float, b: float) -> float:
     :return: Product of a and b
     """
     return a * b
+
+@server.tool()
+def divide(a: float, b: float) -> float:
+    """
+    Divides a by b, and returns the result.
+
+    :param a: Numerator
+    :param b: Denominator
+    :return: Quotient of a and b
+
+    Raises:
+        ZeroDivisionError: If b is zero.
+    """
+    if b == 0:
+        raise ZeroDivisionError("Division by zero is not allowed.")
+    return a / b
