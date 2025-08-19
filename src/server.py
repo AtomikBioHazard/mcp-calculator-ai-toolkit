@@ -19,3 +19,14 @@ def add(a: float, b: float) -> float:
     :return: Sum of a and b
     """
     return a + b
+
+@server.tool()
+def subtract(a: float, b: float) -> float:
+    """
+    Subtracts b from a, and returns the result.
+
+    :param a: First number
+    :param b: Second number
+    :return: Difference of a and b
+    """
+    return a - b
