@@ -57,3 +57,14 @@ def divide(a: float, b: float) -> float:
     if b == 0:
         raise ZeroDivisionError("Division by zero is not allowed.")
     return a / b
+
+@server.tool()
+def power(base: float, exponent: float) -> float:
+    """
+    Raises base to the power of exponent, and returns the result.
+
+    :param base: Base number
+    :param exponent: Exponent
+    :return: Result of base ** exponent
+    """
+    return base ** exponent
