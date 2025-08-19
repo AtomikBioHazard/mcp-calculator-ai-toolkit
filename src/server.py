@@ -77,7 +77,25 @@ def mod(a: float, b: float) -> float:
     :param a: Dividend
     :param b: Divisor
     :return: Remainder of a / b
+
+    Raises:
+        ZeroDivisionError: If b is zero.
     """
     if b == 0:
         raise ZeroDivisionError("Division by zero is not allowed.")
     return a % b
+
+@server.tool()
+def sqrt(a: float) -> float:
+    """
+    Returns the square root of a.
+
+    :param a: Input number
+    :return: Square root of a
+
+    Raises:
+        ValueError: If a is negative.
+    """
+    if a < 0:
+        raise ValueError("Cannot compute square root of negative number.")
+    return a ** 0.5
