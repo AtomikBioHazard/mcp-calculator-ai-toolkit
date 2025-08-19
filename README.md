@@ -1,8 +1,4 @@
 
-# Project Title
-
-A brief description of what this project does and who it's for
-
 # Calculator MCP Server
 
 This is a sample **MCP Server in Python** implementing calculator tools.  
