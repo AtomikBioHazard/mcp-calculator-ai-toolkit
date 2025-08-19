@@ -8,3 +8,14 @@ from mcp.server.fastmcp import FastMCP
 
 # Initialize FastMCP server
 server = FastMCP("calculator")
+
+@server.tool()
+def add(a: float, b: float) -> float:
+    """
+    Adds two numbers together, and return the result.
+
+    :param a: First number
+    :param b: Second number
+    :return: Sum of a and b
+    """
+    return a + b
