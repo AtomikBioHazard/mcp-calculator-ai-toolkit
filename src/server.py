@@ -68,3 +68,16 @@ def power(base: float, exponent: float) -> float:
     :return: Result of base ** exponent
     """
     return base ** exponent
+
+@server.tool()
+def mod(a: float, b: float) -> float:
+    """
+    Returns the remainder of a divided by b.
+
+    :param a: Dividend
+    :param b: Divisor
+    :return: Remainder of a / b
+    """
+    if b == 0:
+        raise ZeroDivisionError("Division by zero is not allowed.")
+    return a % b
