@@ -30,3 +30,14 @@ def subtract(a: float, b: float) -> float:
     :return: Difference of a and b
     """
     return a - b
+
+@server.tool()
+def multiply(a: float, b: float) -> float:
+    """
+    Multiplies two numbers together, and returns the result.
+
+    :param a: First number
+    :param b: Second number
+    :return: Product of a and b
+    """
+    return a * b
